@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Download Image</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Download Image - Modern Style</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #1e1e2f;
+    color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .image-container {
+    background: #2e2e4d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    max-width: 700px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.4);
+  }
+  .download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background: #4a90e2;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 32px;
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .download-btn:hover {
+    background: #357abd;
+    box-shadow: 0 12px 24px rgba(53, 122, 189, 0.7);
+  }
+  p {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #bbb;
+  }
+</style>
 </head>
 <body>
   <h1>Download Your Image</h1>
-  <a href="beautiful-t-rex-hd-wallpaper-background_862489-11422.jpg" download="beautiful-t-rex-hd-wallpaper-background.jpg" title="Click to download">
-    <img src="beautiful-t-rex-hd-wallpaper-background_862489-11422.jpg" alt="Beautiful T-Rex Wallpaper" style="max-width: 600px; height: auto;" />
-  </a>
-  <p>Click the image above to download it.</p>
+  <div class="image-container">
+    <a href="beautiful-t-rex-hd-wallpaper-background_862489-11422.jpg" download="t-rex-wallpaper.jpg" title="Click the image or button to download">
+      <img src="beautiful-t-rex-hd-wallpaper-background_862489-11422.jpg" alt="Beautiful T-Rex Wallpaper" />
+    </a>
+    <a href="beautiful-t-rex-hd-wallpaper-background_862489-11422.jpg" download="t-rex-wallpaper.jpg" class="download-btn" title="Download Image">Download Image</a>
+  </div>
+  <p>Click the image or the button above to download the wallpaper in full clarity.</p>
 </body>
 </html>
